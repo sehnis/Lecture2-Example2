@@ -14,8 +14,8 @@ def see_form():
 <input type="submit" value="Submit">
 """ ## HINT: In there ^ is where you need to add a little bit to the code...
     if request.method == "POST":
-        entered = request.form.get('phrase',"")
-        return "The last phrase entered was {}".format(entered) + formstring
+        pass
+        # Add more code here so that when someone enters a phrase, you see their data (somehow) AND the form!
     else:
         return formstring
 
