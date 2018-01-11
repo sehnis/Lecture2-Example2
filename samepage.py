@@ -9,10 +9,10 @@ def main_page():
 @app.route('/seeform',methods=["GET","POST"])
 def see_form():
     formstring = """<br><br>
-    <form action="http://localhost:5000/seeform" method='POST'>
+    <form action="" method='POST'>
 <input type="text" name="phrase"> Enter a phrase: <br>
 <input type="submit" value="Submit">
-"""
+""" ## HINT: In there ^ is where you need to add a little bit to the code...
     if request.method == "POST":
         entered = request.form.get('phrase',"")
         return "The last phrase entered was {}".format(entered) + formstring
